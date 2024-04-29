@@ -1,0 +1,9 @@
+.contact-form-container {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1.5rem;
+}

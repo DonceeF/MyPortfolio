@@ -1,0 +1,13 @@
+.work-experience-card {
+  background: #130f2a;
+  border-radius: 0.65rem;
+  border: 1.5px solid #6751b9;
+  margin: 0 1rem;
+  padding: 1.5rem;
+}
+
+.work-experience-card h6 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+}

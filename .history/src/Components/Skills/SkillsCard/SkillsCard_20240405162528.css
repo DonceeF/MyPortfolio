@@ -1,0 +1,7 @@
+.skills-card {
+  border-radius: 0.65rem;
+  border: 1px #6751b9 solid;
+  padding: 2.5rem;
+  text-align: center;
+  background: rgba(22, 17, 47, 0.398);
+}

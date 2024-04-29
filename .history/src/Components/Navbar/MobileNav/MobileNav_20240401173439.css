@@ -1,0 +1,14 @@
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 33 !important;
+  opacity: 0;
+  box-shadow: 0px 29px 88px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  transform: translateX(-100vw);
+}

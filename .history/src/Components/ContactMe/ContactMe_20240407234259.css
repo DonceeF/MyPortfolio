@@ -1,0 +1,15 @@
+.contact-container {
+  margin: 4rem 0;
+  position: relative;
+}
+
+.contact-container h5 {
+  font-size: ;
+  font-weight: ;
+  margin-bottom: ;
+}
+
+.contact-content {
+  display: flex;
+  gap: 3rem;
+}

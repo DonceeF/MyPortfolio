@@ -1,0 +1,6 @@
+.skills-info-card {
+  min-height: 23rem;
+  border-radius: 0.65rem;
+  border: solid 1.5px #6751b9;
+  background: rgba(22, 17, 47, 0.398);
+}
