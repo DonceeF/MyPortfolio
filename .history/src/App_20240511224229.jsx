@@ -5,11 +5,31 @@ import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import Skills from "./Components/Skills/Skills";
 import WorkExperience from "./Components/WorkExperience/WorkExperience";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes, Link } from "react-router-dom";
 
 function App() {
+  // const link_home = (
+  //   <Link to="/" className="menu-item">
+  //     Home
+  //   </Link>
+  // );
+  // const link_Skills = (
+  //   <Link to="/Skills" className="menu-item">
+  //     Skills
+  //   </Link>
+  // );
+  // const link_experience = (
+  //   <Link to="/WorkExperience" className="menu-item">
+  //     Work Experience
+  //   </Link>
+  // );
+  // const link_contact = (
+  //   <Link to="/ContactMe" className="menu-item">
+  //     Contact Me
+  //   </Link>
+  // );
   return (
-    <Router>
+    <>
       <Navbar />
       <div className="container">
         <Routes>
@@ -22,15 +42,13 @@ function App() {
               <ContactMe key="ContactMe" />,
             ]}
           ></Route>
-
           <Route path="/skills" element={<Skills />}></Route>
           <Route path="/workexperience" element={<WorkExperience />}></Route>
           <Route path="/contactme" element={<ContactMe />}></Route>
         </Routes>
-
         <Footer />
       </div>
-    </Router>
+    </>
   );
 }
 

@@ -1,61 +1,59 @@
-import { useState } from "react";
-import "./Navbar.css";
-import { IoClose } from "react-icons/io5";
-import { FaBars } from "react-icons/fa";
-import MobileNav from "./MobileNav/MobileNav";
+import "./MobileNav.css";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
-  const [openMenu, setOpenMenu] = useState(false);
-
-  const toggleMenu = () => {
-    setOpenMenu(!openMenu);
-  };
-
+const MobileNav = ({ isOpen, toggleMenu }) => {
   return (
     <>
-      <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
-      <nav className="nav-wrapper">
-        <div className="nav-content">
+      <div className={`mobile-menu ${isOpen && "active"}`} onClick={toggleMenu}>
+        <div className="mobile-menu-container">
           <img className="logo" src="./assets/images/logo.png" />
           <ul>
             <li>
               <Link to="/" className="menu-item">
                 Home
               </Link>
+              {/* <a href="">
+                Home
+              </a> */}
             </li>
             <li>
               <Link to="/skills" className="menu-item">
                 Skills
               </Link>
+              {/* <a href="">
+                Skills
+              </a> */}
             </li>
             <li>
               <Link to="/workexperience" className="menu-item">
                 Work Experience
               </Link>
+              {/* <a href="">
+                Work Experience
+              </a> */}
             </li>
             <li>
               <Link to="/contactme" className="menu-item">
                 Contact Me
               </Link>
+              {/* <a href="">
+                Contact Me
+              </a> */}
             </li>
             <button className="contact-btn" onClick={() => {}}>
               Hire Me
             </button>
           </ul>
-          <button
-            className="menu-btn"
-            onClick={() => {
-              toggleMenu();
-            }}
-          >
-            {openMenu ? <IoClose size="1.6rem" /> : <FaBars size="1.2rem" />}
-            {/* <FaBars size="1.2rem" /> */}
-          </button>
         </div>
-      </nav>
+      </div>
     </>
   );
 };
 
-export default Navbar;
+MobileNav.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  toggleMenu: PropTypes.func.isRequired,
+};
+
+export default MobileNav;

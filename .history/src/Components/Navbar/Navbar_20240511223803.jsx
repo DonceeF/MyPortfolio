@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
-  const toggleMenu = () => {
+  const toggleMenu = (props) => {
     setOpenMenu(!openMenu);
   };
 
@@ -23,21 +23,33 @@ const Navbar = () => {
               <Link to="/" className="menu-item">
                 Home
               </Link>
+              {/* <a className="menu-item" href="">
+                Home
+              </a> */}
             </li>
             <li>
-              <Link to="/skills" className="menu-item">
+              {/* <Link to="/Skills" className="menu-item">
                 Skills
-              </Link>
+              </Link> */}
+              {/* <a className="menu-item" href="">
+                Skills
+              </a> */}
             </li>
             <li>
-              <Link to="/workexperience" className="menu-item">
+              {/* <Link to="/WorkExperience" className="menu-item">
                 Work Experience
-              </Link>
+              </Link> */}
+              {/* <a className="menu-item" href="">
+                Work Experience
+              </a> */}
             </li>
             <li>
-              <Link to="/contactme" className="menu-item">
+              {/* <Link to="/ContactMe" className="menu-item">
                 Contact Me
-              </Link>
+              </Link> */}
+              {/* <a className="menu-item" href="">
+                Contact Me
+              </a> */}
             </li>
             <button className="contact-btn" onClick={() => {}}>
               Hire Me

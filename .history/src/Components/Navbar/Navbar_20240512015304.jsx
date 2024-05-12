@@ -25,19 +25,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/skills" className="menu-item">
-                Skills
-              </Link>
+              <Link to="/skills">Skills</Link>
             </li>
             <li>
-              <Link to="/workexperience" className="menu-item">
-                Work Experience
-              </Link>
+              <Link to="/workexperience">Work Experience</Link>
             </li>
             <li>
-              <Link to="/contactme" className="menu-item">
-                Contact Me
-              </Link>
+              <Link to="/contactme">Contact Me</Link>
             </li>
             <button className="contact-btn" onClick={() => {}}>
               Hire Me

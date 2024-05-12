@@ -4,30 +4,17 @@ import { FaGithub } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import ContactForm from "./ContactForm/ContactForm";
 
-const contactInfo = [
-  {
-    icon: FaGithub,
-    path: "https://github.com/DonceeF",
-  },
-  {
-    icon: CiMail,
-    path: "monsefmastour16@gmail.com",
-  },
-];
-
 const ContactMe = () => {
   return (
     <section className="contact-container">
       <h5>Contact Me</h5>
       <div className="contact-content">
         <div style={{ flex: 1 }}>
-          {contactInfo.map((info, index) => (
-            <ContactInfoCard
-              key={`info_${index}`}
-              iconUrl={info.icon}
-              text={info.path}
-            />
-          ))}
+          <ContactInfoCard
+            iconUrl={FaGithub}
+            text="https://github.com/DonceeF"
+          />
+          <ContactInfoCard iconUrl={CiMail} text="monsefmastour16@gmail.com" />
         </div>
         <div style={{ flex: 1 }}>
           <ContactForm />

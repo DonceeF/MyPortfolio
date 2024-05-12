@@ -5,14 +5,27 @@ import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import Skills from "./Components/Skills/Skills";
 import WorkExperience from "./Components/WorkExperience/WorkExperience";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
       <div className="container">
         <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero key="Hero" />
+                <Skills key="Skills" />
+                <WorkExperience key="WorkExperience" />
+                <ContactMe key="ContactMe" />
+              </>
+            }
+          ></Route>
+        </Routes>
+        {/* <Routes>
           <Route
             path="/"
             element={[
@@ -22,15 +35,13 @@ function App() {
               <ContactMe key="ContactMe" />,
             ]}
           ></Route>
-
           <Route path="/skills" element={<Skills />}></Route>
           <Route path="/workexperience" element={<WorkExperience />}></Route>
           <Route path="/contactme" element={<ContactMe />}></Route>
-        </Routes>
-
+        </Routes> */}
         <Footer />
       </div>
-    </Router>
+    </>
   );
 }
 

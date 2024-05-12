@@ -1,18 +1,18 @@
 import "./App.css";
-import ContactMe from "./Components/ContactMe/ContactMe";
+// import ContactMe from "./Components/ContactMe/ContactMe";
 import Footer from "./Components/Footer/Footer";
-import Hero from "./Components/Hero/Hero";
+// import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
-import Skills from "./Components/Skills/Skills";
-import WorkExperience from "./Components/WorkExperience/WorkExperience";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import Skills from "./Components/Skills/Skills";
+// import WorkExperience from "./Components/WorkExperience/WorkExperience";
+// import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
       <div className="container">
-        <Routes>
+        {/* <Routes>
           <Route
             path="/"
             element={[
@@ -22,15 +22,13 @@ function App() {
               <ContactMe key="ContactMe" />,
             ]}
           ></Route>
-
           <Route path="/skills" element={<Skills />}></Route>
           <Route path="/workexperience" element={<WorkExperience />}></Route>
           <Route path="/contactme" element={<ContactMe />}></Route>
-        </Routes>
-
+        </Routes> */}
         <Footer />
       </div>
-    </Router>
+    </>
   );
 }
 

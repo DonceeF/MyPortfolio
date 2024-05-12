@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { IoClose } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
 import MobileNav from "./MobileNav/MobileNav";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -20,24 +20,28 @@ const Navbar = () => {
           <img className="logo" src="./assets/images/logo.png" />
           <ul>
             <li>
-              <Link to="/" className="menu-item">
+              {/* <Link to="/">Home</Link> */}
+              {/* <a  href="">
                 Home
-              </Link>
+              </a> */}
             </li>
             <li>
-              <Link to="/skills" className="menu-item">
+              {/* <Link to="/Skills">Skills</Link> */}
+              {/* <a  href="">
                 Skills
-              </Link>
+              </a> */}
             </li>
             <li>
-              <Link to="/workexperience" className="menu-item">
+              {/* <Link to="/WorkExperience">Work Experience</Link> */}
+              {/* <a  href="">
                 Work Experience
-              </Link>
+              </a> */}
             </li>
             <li>
-              <Link to="/contactme" className="menu-item">
+              {/* <Link to="/ContactMe">Contact Me</Link> */}
+              {/* <a  href="">
                 Contact Me
-              </Link>
+              </a> */}
             </li>
             <button className="contact-btn" onClick={() => {}}>
               Hire Me

@@ -5,11 +5,11 @@ import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import Skills from "./Components/Skills/Skills";
 import WorkExperience from "./Components/WorkExperience/WorkExperience";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
       <div className="container">
         <Routes>
@@ -23,14 +23,12 @@ function App() {
             ]}
           ></Route>
 
-          <Route path="/skills" element={<Skills />}></Route>
           <Route path="/workexperience" element={<WorkExperience />}></Route>
           <Route path="/contactme" element={<ContactMe />}></Route>
         </Routes>
-
         <Footer />
       </div>
-    </Router>
+    </>
   );
 }
 

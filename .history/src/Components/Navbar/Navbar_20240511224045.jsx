@@ -23,21 +23,33 @@ const Navbar = () => {
               <Link to="/" className="menu-item">
                 Home
               </Link>
+              {/* <a className="menu-item" href="">
+                Home
+              </a> */}
             </li>
             <li>
               <Link to="/skills" className="menu-item">
                 Skills
               </Link>
+              {/* <a className="menu-item" href="">
+                Skills
+              </a> */}
             </li>
             <li>
               <Link to="/workexperience" className="menu-item">
                 Work Experience
               </Link>
+              {/* <a className="menu-item" href="">
+                Work Experience
+              </a> */}
             </li>
             <li>
               <Link to="/contactme" className="menu-item">
                 Contact Me
               </Link>
+              {/* <a className="menu-item" href="">
+                Contact Me
+              </a> */}
             </li>
             <button className="contact-btn" onClick={() => {}}>
               Hire Me

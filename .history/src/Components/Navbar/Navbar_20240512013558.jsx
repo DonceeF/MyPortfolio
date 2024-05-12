@@ -3,10 +3,11 @@ import "./Navbar.css";
 import { IoClose } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
 import MobileNav from "./MobileNav/MobileNav";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
@@ -20,24 +21,16 @@ const Navbar = () => {
           <img className="logo" src="./assets/images/logo.png" />
           <ul>
             <li>
-              <Link to="/" className="menu-item">
-                Home
-              </Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/skills" className="menu-item">
-                Skills
-              </Link>
+              <Link to="/skills">Skills</Link>
             </li>
             <li>
-              <Link to="/workexperience" className="menu-item">
-                Work Experience
-              </Link>
+              <Link to="/workexperience">Work Experience</Link>
             </li>
             <li>
-              <Link to="/contactme" className="menu-item">
-                Contact Me
-              </Link>
+              <Link to="/contactme">Contact Me</Link>
             </li>
             <button className="contact-btn" onClick={() => {}}>
               Hire Me

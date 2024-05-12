@@ -9,28 +9,28 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
       <div className="container">
-        <Routes>
-          <Route
-            path="/"
-            element={[
-              <Hero key="Hero" />,
-              <Skills key="Skills" />,
-              <WorkExperience key="WorkExperience" />,
-              <ContactMe key="ContactMe" />,
-            ]}
-          ></Route>
+        <Router>
+          <Routes>
+            <Route
+              path="/"
+              element={[
+                <Hero key="Hero" />,
+                <Skills key="Skills" />,
+                <WorkExperience key="WorkExperience" />,
+                <ContactMe key="ContactMe" />,
+              ]}
+            ></Route>
 
-          <Route path="/skills" element={<Skills />}></Route>
-          <Route path="/workexperience" element={<WorkExperience />}></Route>
-          <Route path="/contactme" element={<ContactMe />}></Route>
-        </Routes>
-
+            <Route path="/workexperience" element={<WorkExperience />}></Route>
+            <Route path="/contactme" element={<ContactMe />}></Route>
+          </Routes>
+        </Router>
         <Footer />
       </div>
-    </Router>
+    </>
   );
 }
 

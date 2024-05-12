@@ -23,7 +23,6 @@ function App() {
             ]}
           ></Route>
 
-          <Route path="/skills" element={<Skills />}></Route>
           <Route path="/workexperience" element={<WorkExperience />}></Route>
           <Route path="/contactme" element={<ContactMe />}></Route>
         </Routes>
